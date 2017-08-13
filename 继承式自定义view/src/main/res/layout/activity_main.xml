@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.demo10_view.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/abc"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="北京颜值担当易大师"
+                    android:textSize="23dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_decs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="英俊潇洒,风流倜傥"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_bought"
+                        android:layout_toStartOf="@+id/tv_bought"
+                        android:text="已售"/>
+
+                    <TextView
+                        android:id="@+id/tv_bought"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="666"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="13dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/mini_icon_sure"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="随时退"
+                            android:textSize="17dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/mini_icon_sure"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="随时退"
+                            android:textSize="17dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/mini_icon_sure"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="随时退"
+                            android:textSize="17dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商家信息"
+                        android:textSize="18.0sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="北京燕山电影院"
+                        android:textSize="17dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="北京房山区燕山岗南路9号"/>
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:text="两件事你需要关注--第一，保持现有的；第二，持续发展。我们要保持这种风格，不靠噱头和花招。同时，要在不破坏现有水准的前提下，关注那些持续发展的、容易扩大规模的产品或趋势。--马克.扎克伯格
+在Facebook公司成立10周年,马克.扎克伯格一方面强调了公司要脚踏实地保持现有领域的领先地位,一方面要关注新技术,新方向.
+管理公司如此,学习知识亦是相同,一方面要把之前所学温故知新一遍,另一方也要关注Android最近发展流行的新技术,锐意进取;
+本课程的目标就是为了在巩固同学们基础的同时进一步提高学生android专业的深度和宽度,使其成为一名合格的Android高级工程师,适应当今Android开发相当火热,但是高级Android开发人员却比较少的市场需求,达成学生高薪就业和缓解企业人才渴求的双重目标
+本课程面向的是具备一定Android基础的人群,内容突出实战和知识的体系性,通过本课程的学习,使学生把之前积累的种种知识,温习一遍后,又加入了Android程序即时通讯，XMPP,讯飞语音开发,RxAndroid,retrofit,Fresco,GreedDao等当今Android的主流框架以及APK瘦身加固,多渠道打包,Java8,版本更新,断点续传,百分比适配等Android工程师必备知识点,最后带着学生阅读Android的library层核心类的源码,完成从量变进行质变, 鲤鱼跳龙门这一过程,脱胎换骨,成就大神之路。
+准备好了吗!让我开启这场生动有趣又充满挑战的Android进阶旅程吧!
+ 学习知识要善于思考，思考，再思考。 —— 爱因斯坦
+本课程在教学过程中，重在引导学生思考,遇到问题怎么构思解决思路,多提问,提高学生解决实际问题的能力；培养学生自学能力,把教学中参考的demo,网址,以及项目的最终效果GIF图等分享给学生,再授课前先让学生研究预习,再进行讲解,正所谓授人以鱼不如授人以渔,使学生离开学校,也能适应日新月异的IT发展;锻炼学生语言沟通能力,使其在日后的面试过程中,能游刃有余的应对面试官的提问
+在授课过程中，主要分为三部分:一是：分析使用新技术完成项目的实现思路，在开始敲代码前,先把代码实现的大致步骤,给学生解释清楚,这里主要用的是visio流程图,Raptor图和注释；二是：对新技术原理或者完成项目中某个特定需求用到的算法,进行剖析,最好以图文结合的形式,给学生讲解这些抽象的东西,通过文字详细描述概念,通过画图说明加深学生的理解和记忆；三是：总结回顾,使用思维导图,将一天学习的知识点进行梳理,因为本门课程,知识点较多,且难度较大,教授完课程,学生很难在大脑中长久记忆与灵活运用,此时再带着学生,根据核心技术点做为主干,扩展到实际运用中,以分支的形式体现,把使用这个技术点,容易产生什么问题,怎么解决,最后完成项目后能否进行优化,都复习一遍;最后是：检查学生口述能力,每天所学技术点,都要求学生做到流利的说上一遍,具体到这个技术,第一步怎么做,第二步怎么做,第三步进行时有什么问题,怎么解决,第四步完成效果,第五步效果完成,怎么进行优化,为以后面试的语言表达能力打下坚实的基础。"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@mipmap/ic_call"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.demo10_view.ObservableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="top"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff666666"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

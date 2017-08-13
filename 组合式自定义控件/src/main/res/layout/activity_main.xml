@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demo09_.MainActivity">
+    <com.example.demo09_.AddSubView
+        android:id="@+id/addsubview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.demo09_.AddSubView>
+
+</RelativeLayout>
